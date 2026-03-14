@@ -1,39 +1,149 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tags HTML</title>
-  </head>
-  <body>
-    <h1>Título principal</h1>
-    <h2>Subtítulo</h2>
-    <h3>Seção</h3>
-    <h4>Subseção</h4>
-    <h5>Menor</h5>
-    <h6>Menor ainda</h6>
-    <!-- tags de título -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Básico de Tags HTML</title>
+</head>
 
-    <p>
-      eu sou um parágrafo, não importa como eu seja escrito, a tag &lt;p&gt; não
-      vai interpretar formatação textual.
-    </p>
-    <!-- tag de parágrafo -->
-    <br />
-    <!-- tag br (break) - quebra de linha -->
-    <p>eu sou outro parágrafo</p>
-    <p>texto em <strong>negrito</strong></p>
-    <!-- tag strong para deixar o texto em negrito -->
-    <p>
-      <em
-        >Um idiota é um idiota. Dois idiotas são dois idiotas. Dez mil idiotas
-        formam um partido político.</em
-      >
-    </p>
-    <!-- tag em (enfase ou itálico) -->
-    <p>minha casa tem 7m<sup>2</sup></p>
-    <!-- tag sup -->
-    <p>minha água é formada por H<sub>2</sub>O</p>
-    <!-- tag sub -->
-  </body>
+<body>
+
+  <!-- TÍTULOS -->
+
+  <h1>Título principal (h1)</h1>
+  <h2>Subtítulo (h2)</h2>
+  <h3>Seção (h3)</h3>
+  <h4>Subseção (h4)</h4>
+  <h5>Título menor (h5)</h5>
+  <h6>Título ainda menor (h6)</h6>
+
+  <!-- As tags h1 até h6 são usadas para títulos e subtítulos.
+       h1 é o mais importante e h6 o menos importante. -->
+
+
+
+  <!-- PARÁGRAFOS E TEXTO -->
+
+  <p>
+    Eu sou um parágrafo. A tag <code>&lt;p&gt;</code> cria blocos de texto
+    e ignora espaços extras ou quebras de linha no código.
+  </p>
+
+  <!-- <br> cria uma quebra de linha -->
+  <br>
+
+  <p>Este é outro parágrafo.</p>
+
+  <p>Texto em <strong>negrito</strong> usando a tag <code>&lt;strong&gt;</code>.</p>
+
+  <p>
+    Texto em <em>itálico ou com ênfase</em> usando a tag <code>&lt;em&gt;</code>.
+  </p>
+
+  <!-- Sobrescrito -->
+  <p>Área: 7m<sup>2</sup></p>
+
+  <!-- Subscrito -->
+  <p>Fórmula da água: H<sub>2</sub>O</p>
+
+
+
+  <!-- IMAGENS -->
+
+  <h2>Imagem</h2>
+
+  <img
+    src="https://i.pinimg.com/1200x/fa/7d/c0/fa7dc0b58c717c8afe77fa2152b6f986.jpg"
+    alt="Personagem Dexter com expressão engraçada"
+    width="300"
+  >
+
+  <!--
+  tag img: usada para mostrar imagens
+
+  src = endereço da imagem
+  alt = descrição da imagem (acessibilidade e caso não carregue)
+  width = largura da imagem
+  -->
+
+
+
+  <!-- LISTAS -->
+
+  <h2>Lista ordenada</h2>
+
+  <ol type="1" start="1">
+    <li>Estudar HTML</li>
+    <li>Praticar criando páginas</li>
+    <li>Aprender CSS</li>
+    <li>Aprender JavaScript</li>
+  </ol>
+
+  <!--
+  ol = ordered list (lista ordenada)
+  li = list item (item da lista)
+  type = tipo de numeração
+  start = número inicial
+  -->
+
+
+
+  <h2>Lista não ordenada</h2>
+
+  <ul type="disc">
+    <li>Notebook</li>
+    <li>Internet</li>
+    <li>Editor de código</li>
+  </ul>
+
+  <!--
+  ul = unordered list (lista com marcadores)
+  -->
+
+
+
+  <!-- LINKS -->
+
+  <h2>Links</h2>
+
+  <p>Materiais de estudo:</p>
+
+  <ul>
+    <li>
+      <a href="https://jwt.io/" target="_blank" rel="external">
+        JWT
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.cloudflare.com/" target="_blank">
+        Cloudflare
+      </a>
+    </li>
+
+    <li>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+        Documentação HTML (MDN)
+      </a>
+    </li>
+  </ul>
+
+  <!--
+  a = anchor (link)
+
+  href = destino do link
+  target="_blank" = abre em nova aba
+  rel="external" = indica que o link é externo
+  -->
+
+
+
+  <!-- COMENTÁRIOS -->
+
+  <!--
+  Comentários em HTML não aparecem na página.
+  Eles servem apenas para explicar o código.
+  -->
+
+</body>
 </html>
