@@ -31,44 +31,24 @@
 }
 
 /* Reset básico */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: var(--font-primary);
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
   background: var(--background-primary-color);
   color: var(--text-primary-color);
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* media querie tablet*/
