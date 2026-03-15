@@ -41,6 +41,11 @@ nav {
   display: none;
 }
 
+/* pegando elemento irmão (adjacente) usando ~ */
+input[type='checkbox']:checked ~ nav {
+    display: block;
+}
+
 /* LISTA */
 .list-items {
   list-style: none;
