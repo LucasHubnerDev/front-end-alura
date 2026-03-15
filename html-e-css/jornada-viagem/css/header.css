@@ -13,8 +13,8 @@ header {
   filter: brightness(0) invert(1);
 }
 
-/* NAV ESCONDIDO */
 .nav-container {
+  will-change: opacity, transform;
   position: absolute;
   top: 100%;
   right: 0;
@@ -24,21 +24,20 @@ header {
   visibility: hidden;
   pointer-events: none;
 
-  transform: translateY(-15px) scale(0.98);
+  transform: translateY(-10px);
 
   transition:
-    opacity 0.3s ease,
-    transform 0.3s ease,
-    visibility 0.3s;
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s;
 }
 
-/* MENU ABERTO */
-input[type="checkbox"]:checked ~ nav {
+input[type="checkbox"]:checked ~ .nav-container {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
 /* LISTA */
@@ -69,4 +68,34 @@ input[type="checkbox"]:checked ~ nav {
 
 .list-items a:hover {
   color: var(--text-primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0) scale(1);
+    margin: 0;
+  }
+
+  .menu label {
+    display: none;
+  }
+
+  .menu .nav-container {
+    display: block;
+  }
+
+  .list-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .list-items li {
+    background-color: transparent;
+  }
 }

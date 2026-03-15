@@ -3,40 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="planeje com antecedência sua jornada" />
+    <meta
+      name="description"
+      content="Planeje com antecedência sua jornada de viagem."
+    />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Campanha Relaxante</title>
+    <title>Jornada Viagem | Campanha Relaxante</title>
   </head>
+
   <body>
     <header>
       <a href="index.html" class="logo">
-        <img src="img/bussola-icon-42x42px.png" alt="Jornada Viagem" />
+        <img src="img/bussola-icon-42x42px.png" alt="Logo Jornada Viagem" />
       </a>
 
       <div class="menu">
-        <label for="open-menu">
-          <img src="img/menu-icon-42x42px.png" alt="menu" />
-        </label>
-        <input type="checkbox" id="open-menu" hidden/>
+        <input type="checkbox" id="open-menu" class="menu-toggle" hidden/>
 
-        <nav class="nav-container">
+        <label for="open-menu">
+          <img src="img/menu-icon-42x42px.png" alt="Abrir menu de navegação" />
+        </label>
+
+        <nav class="nav-container" aria-label="Menu principal">
           <ul class="list-items">
+            <li><a href="blog.html" title="Acessar blog">Blog</a></li>
             <li>
-              <a href="blog.html" title="Acessar blog">Blog</a>
+              <a href="pacotes.html" title="Acessar pacotes de viagem"
+                >Pacotes de viagem</a
+              >
             </li>
             <li>
-              <a href="pacotes.html" title="Acessar pacotes de viagem">
-                Pacotes de viagem
-              </a>
+              <a href="contato.html" title="Acessar página de contato"
+                >Contato</a
+              >
             </li>
-            <li>
-              <a href="contato.html" title="Acessar contato"> Contato </a>
-            </li>
-            
           </ul>
         </nav>
       </div>
     </header>
+
+    <main></main>
   </body>
 </html>
