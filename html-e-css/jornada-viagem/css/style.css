@@ -63,6 +63,22 @@ select {
   font: inherit;
 }
 
-h1 {
-  font: normal small-caps var(--titles-weight) 2rem var(--font-primary);
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  background-color: var(--background-tertiary-color);
+}
+
+/* media querie tablet*/
+@media screen and (max-width: 768px) {
+  body{ 
+    background-color: var(--background-tertiary-color);
+  }
 }
