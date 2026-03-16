@@ -1,0 +1,46 @@
+/* mobile banner */
+.hero-img {
+  height: 400px;
+  width: 100%;
+  /* background-image: url("../img/mobile-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+  background: url("https://i.pinimg.com/originals/09/ed/9f/09ed9f6148bf455507f39f6e685c454c.gif")
+    no-repeat center;
+  background-size: cover;
+}
+
+.hero-description {
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hero-description .red {
+    color: rgb(188, 16, 16);
+}
+
+.hero-description .green {
+    color: rgb(42, 186, 42);
+}
+
+/* tablet banner */
+@media screen and (min-width: 768px) {
+  .hero-img {
+    height: 600px;
+    background: url("https://i.pinimg.com/736x/38/8e/e8/388ee8a5ceac1c2b0e78541518864464.jpg")
+      no-repeat center;
+    background-size: cover;
+  }
+}
+
+/* desktop banner */
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    height: 500px;
+    background: url("https://i.pinimg.com/736x/81/07/4e/81074e6ad41345e697b1c1ea87fd1bfb.jpg")
+      no-repeat center;
+    background-size: cover;
+  }
+}
