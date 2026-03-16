@@ -15,11 +15,26 @@
   <body>
     <header>
       <a href="index.html" class="logo">
-        <img src="img/bussola-icon-42x42px.png" alt="Logo Jornada Viagem" />
+        <picture>
+          <!-- imagem para telas maiores -->
+          <source
+            srcset="
+              https://i.pinimg.com/736x/db/42/d4/db42d4a7296225d553e2ac3875952151.jpg
+            "
+            media="(min-width: 1024px)"
+          />
+
+          <!-- imagem padrão (mobile) -->
+          <img
+            class="logo-img"
+            src="img/bussola-icon-42x42px.png"
+            alt="Logo Jornada Viagem"
+          />
+        </picture>
       </a>
 
       <div class="menu">
-        <input type="checkbox" id="open-menu" class="menu-toggle" hidden/>
+        <input type="checkbox" id="open-menu" class="menu-toggle" hidden />
 
         <label for="open-menu">
           <img src="img/menu-icon-42x42px.png" alt="Abrir menu de navegação" />
