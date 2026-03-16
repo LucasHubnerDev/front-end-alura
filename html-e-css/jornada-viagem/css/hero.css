@@ -12,9 +12,10 @@
 }
 
 .hero-description {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
     text-transform: capitalize;
+    font-size: 1rem;
 }
 
 .hero-description .red {
@@ -28,19 +29,25 @@
 /* tablet banner */
 @media screen and (min-width: 768px) {
   .hero-img {
-    height: 600px;
     background: url("https://i.pinimg.com/736x/38/8e/e8/388ee8a5ceac1c2b0e78541518864464.jpg")
       no-repeat center;
     background-size: cover;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
   }
 }
 
 /* desktop banner */
 @media screen and (min-width: 1024px) {
   .hero-img {
-    height: 500px;
     background: url("https://i.pinimg.com/736x/81/07/4e/81074e6ad41345e697b1c1ea87fd1bfb.jpg")
       no-repeat center;
     background-size: cover;
+  }
+
+  .hero-description {
+    font-size: 2.4rem;
   }
 }
