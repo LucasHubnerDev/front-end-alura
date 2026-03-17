@@ -20,3 +20,42 @@
   border-radius: 5px;
   background-color: var(--background-tertiary-color);
 }
+
+.offer-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 550px));
+  gap: 1.5rem;
+  padding: 1rem;
+  color: var(--text-secondary-color);
+}
+
+.card {
+  text-align: center;
+  background: url("https://i.pinimg.com/736x/4d/b2/34/4db23482da80c8873a0ae5896d39e967.jpg") no-repeat center;
+  background-size: cover;
+  height: 288px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card header {
+  display: block;
+  padding: 2rem 1rem;
+}
+
+.card header p {
+  font-size: 1.4rem;
+  font-weight: var(--text-weight);
+}
+
+.card header h3 {
+  font-size: var(--giant-title);
+  font-weight: var(--title-weight);
+  margin-top: 8px;
+}
+
+.card header h3 span {
+  font-size: var(--large-title);
+  margin-top: 24px;
+  display: inline-block;
+}

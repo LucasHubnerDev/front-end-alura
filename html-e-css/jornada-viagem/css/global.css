@@ -76,6 +76,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--text-secondary-color);
 }
 
 /* media querie tablet*/

@@ -1,5 +1,5 @@
 /* HEADER */
-header {
+.header-main {
   background-color: var(--background-tertiary-color);
   display: flex;
   justify-content: space-between;
