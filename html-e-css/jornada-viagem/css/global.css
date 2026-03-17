@@ -11,23 +11,50 @@
   /* background */
   --background-primary-color: #0f172a;
   --background-secondary-color: #1e293b;
-  --background-tertiary-color: #354c71;
+  --background-tertiary-color: #334155; /* leve ajuste pra harmonizar */
 
   /* button */
   --btn-primary-color: #3b82f6;
-  --btn-secondary-color: #2563eb;
+  --btn-primary-hover: #2563eb;
+  --btn-secondary-color: #1d4ed8;
 
   /* text */
-  --text-primary-color: #f8fafc;
-  --text-secondary-color: #94a3b8;
+  --text-primary-color: #f1f5f9;
+  --text-secondary-color: #cbd5f1;
+  --text-muted-color: #64748b;
+
+  /* border / UI */
+  --border-color: #334155;
 
   /* peso */
-  --titles-weight: 700;
+  --title-weight: 700;
   --text-weight: 400;
   --menu-text-weight: 500;
 
   /* font */
   --font-primary: "Montserrat", Arial, Helvetica, sans-serif;
+
+  /* font size */
+  --small-text: 0.875rem;
+  --base-text: 1rem;
+  --medium-title: 1.5rem;
+  --large-title: 2rem;
+  --giant-title: 2.5rem;
+
+  /* spacing (muito importante 👇) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* transition */
+  --transition-default: 0.3s ease;
 }
 
 /* Reset básico */

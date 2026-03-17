@@ -10,10 +10,8 @@ header {
 
 /* LOGO */
 .logo-img {
-    display: inline-block;
-  filter: brightness(0) invert(1);
+  display: inline-block;
   border-radius: 50%;
-  width: 48px;
 }
 
 .nav-container {
@@ -100,12 +98,5 @@ input[type="checkbox"]:checked ~ .nav-container {
 
   .list-items li {
     background-color: transparent;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .logo-img {
-    filter: brightness(1) invert(0);
-    width: 56px;
   }
 }
