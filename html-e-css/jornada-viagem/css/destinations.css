@@ -1,0 +1,45 @@
+/* grid box */
+.cards-destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    padding: 1rem;
+    color: var(--text-secondary-color);
+    gap: 2rem;
+}
+
+/* card */
+.card-destino {
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-destino img {
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+}
+
+.card-destino p {
+    font-size: clamp(var(--small-text), 6vw, var(--medium-title));
+    padding: .75rem .5rem;
+}
+
+.card-destino button {
+    padding: .5rem 1rem;
+    font-size: clamp(var(--base-text), 8vw, var(--medium-title));
+    background-color: var(--btn-primary-color);
+    transition: background var(--transition-default);
+    color: var(--text-primary-color);
+}
+
+.card-destino button:hover {
+    background-color: var(--btn-primary-hover);
+    color: var(--text-secondary-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .cards-destinos {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr))
+    }
+}

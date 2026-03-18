@@ -80,6 +80,10 @@ a {
   color: var(--text-secondary-color);
 }
 
+button {
+  border: none;
+}
+
 .section-title {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,0 @@
-/* posso importar todas as folhas de estilo dentro de um arquivo css só */
-@import url(global.css);
-@import url(header.css);
-@import url(hero.css);
-@import url(offers.css);
-@import url(categories.css);
-@import url(destinations.css);
