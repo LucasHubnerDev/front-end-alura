@@ -1,0 +1,43 @@
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 200px));
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* CARD */
+.category-container {
+  aspect-ratio: 1 / 1;
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 0.8rem;
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  justify-items: center;
+
+  text-align: center;
+}
+
+/* ÍCONE */
+.category-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+  /* usado para definir como a imagem vai se comportar dentro de uma caixa diferente de seu tamanho */
+}
+
+/* TEXTO */
+.category-container h3 {
+  font-size: clamp(var(--base-text), 4vw, var(--medium-title));
+  line-height: 1.2;
+  /* define o tamanho da linha */
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  /* limita o número de linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
