@@ -16,7 +16,8 @@
 }
 
 .card-destino img {
-    object-fit: contain;
+    object-fit: cover;
+    height: 270px;
     border-radius: var(--radius-sm);
 }
 
