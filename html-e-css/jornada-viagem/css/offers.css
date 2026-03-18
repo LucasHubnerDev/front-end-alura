@@ -2,60 +2,81 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem;
   text-align: center;
   gap: 1rem;
 }
 
 .section-title h2 {
-  font-size: var(--medium-title);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: var(--title-weight);
   margin: 0;
 }
 
 .section-title hr {
-  width: 180px;
+  width: clamp(100px, 20vw, 180px);
   height: 4px;
-  border:none;
+  border: none;
   border-radius: 5px;
   background-color: var(--background-tertiary-color);
 }
 
+/* GRID */
 .offer-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 550px));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 480px));
+  justify-content: center;
   gap: 1.5rem;
   padding: 1rem;
   color: var(--text-secondary-color);
 }
 
+/* CARD */
 .card {
   text-align: center;
-  background: url("https://i.pinimg.com/736x/4d/b2/34/4db23482da80c8873a0ae5896d39e967.jpg") no-repeat center;
+  background: url("https://i.pinimg.com/736x/15/73/8c/15738c2987b90315109fdb58e2f17632.jpg")
+    no-repeat center;
   background-size: cover;
-  height: 288px;
+  min-height: 250px;
+  height: auto;
+
   border-radius: 12px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card header {
-  display: block;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .card header p {
-  font-size: 1.4rem;
-  font-weight: var(--text-weight);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
 }
 
 .card header h3 {
-  font-size: var(--giant-title);
-  font-weight: var(--title-weight);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin-top: 8px;
 }
 
 .card header h3 span {
-  font-size: var(--large-title);
-  margin-top: 24px;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  margin-top: 16px;
   display: inline-block;
+}
+
+.card .button {
+  padding: 0.8rem;
+  background-color: var(--btn-primary-color);
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-default);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: var(--text-secondary-color);
+  margin: 1rem;
+  position: static;
+}
+
+.card .button:hover {
+  background-color: var(--btn-primary-hover);
 }
