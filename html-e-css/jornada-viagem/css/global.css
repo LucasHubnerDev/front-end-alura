@@ -108,7 +108,7 @@ button {
 }
 
 .content-title{
-  font-size: clamp(var(--medium-title), 6vw, var(--giant-title));
+  font-size: clamp(var(--base-text), 6vw, var(--giant-title));
   font-weight: var(--title-weight);
   color: var(--text-secondary-color)
 }
