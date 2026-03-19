@@ -1,0 +1,49 @@
+.feedbacks-container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Card */
+.feedback-user {
+  background: var(--background-secondary-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* Texto */
+.feedback-text {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Usuário */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Imagem */
+.user-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Info do usuário */
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nome */
+.user-name {
+  font-size: 1rem;
+}
+
+/* Estrelas */
+.user-stars {
+  width: 80px;
+}
