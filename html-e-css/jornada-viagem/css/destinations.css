@@ -23,7 +23,6 @@
 }
 
 .card-destino p {
-    font-size: clamp(var(--small-text), 6vw, var(--medium-title));
     padding: .75rem .5rem;
 }
 

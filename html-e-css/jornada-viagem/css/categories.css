@@ -32,8 +32,8 @@
 
 /* TEXTO */
 .category-container h3 {
-  font-size: clamp(var(--base-text), 4vw, var(--medium-title));
   line-height: 1.2;
+  font-size: 24px;
   /* define o tamanho da linha */
   display: -webkit-box;
   -webkit-line-clamp: 1; 
