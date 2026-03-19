@@ -15,7 +15,6 @@
     padding: 2rem 2rem;
     text-align: center;
     text-transform: capitalize;
-    font-size: 1rem;
 }
 
 .hero-description .red {
@@ -33,10 +32,6 @@
       no-repeat center;
     background-size: cover;
   }
-
-  .hero-description {
-    font-size: var(--medium-title);
-  }
 }
 
 /* desktop banner */
@@ -45,9 +40,5 @@
     background: url("https://i.pinimg.com/736x/d0/cd/fd/d0cdfd2c9b409784a23911bc084ee45e.jpg")
       no-repeat center;
     background-size: cover;
-  }
-
-  .hero-description {
-    font-size: var(--giant-title);
   }
 }

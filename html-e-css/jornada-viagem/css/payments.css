@@ -1,0 +1,63 @@
+.flex-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* TEXTO */
+.text-content {
+  flex: 1;
+}
+
+.content-title {
+  margin-bottom: 1rem;
+}
+
+.content-text {
+  line-height: 1.6;
+}
+
+/* GRID DE IMAGENS */
+.image-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-areas:
+    "photo1 photo2"
+    "photo3 photo3"; */
+  /* grid-template-areas - usado para atribuir areas numa gridbox a um elemento */
+  gap: 10px;
+  max-width: 6gi00px;
+}
+
+.image {
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-width: 125px;
+}
+
+/* POSIÇÕES */
+.photo-1 {
+  /* grid-area: photo1; */
+  /* grid area usado para dizer qual espaço da grid box o item vai ocupar */
+  background: url("https://i.pinimg.com/736x/6c/fa/fb/6cfafb4e21feb3c94b8193c962fc65f9.jpg")
+    center/cover;
+}
+
+.photo-2 {
+  /* grid-area: photo2; */
+  background: url("https://i.pinimg.com/1200x/0e/32/bc/0e32bc37a5bb3a1a188261434e476668.jpg")
+    center/cover;
+}
+
+.photo-3 {
+  /* grid-area: photo3; */
+  grid-column: span 2;
+  background: url("https://i.pinimg.com/736x/23/20/b5/2320b504840a1c86b68a4242773b4c87.jpg")
+    center/cover;
+}
