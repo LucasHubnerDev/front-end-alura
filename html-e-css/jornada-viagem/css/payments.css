@@ -29,7 +29,8 @@
     "photo3 photo3"; */
   /* grid-template-areas - usado para atribuir areas numa gridbox a um elemento */
   gap: 10px;
-  max-width: 6gi00px;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .image {
@@ -38,7 +39,6 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-width: 125px;
 }
 
 /* POSIÇÕES */
