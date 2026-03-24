@@ -16,7 +16,7 @@ const btns = [
     contexto: "foco",
     appTitle: "Otimize sua produtividade,",
     appTitleStrong: "mergulhe no que importa.",
-    temporizador: 1500
+    temporizador: 5
   },
   {
     element: document.querySelector(".app__card-button--curto"),
@@ -123,6 +123,12 @@ const iniciarTemporizador = () => {
 
       startPauseImg.src = "./imagens/play_arrow.png";
       startPauseText.textContent = "Iniciar";
+
+      const focoAtivo = html.getAttribute("data-contexto") == "foco"
+      if(focoAtivo) {
+        const event = new CustomEvent("focoFinalizado")
+        document.dispatchEvent(event)
+      }
     }
   }, 1000);
 };
