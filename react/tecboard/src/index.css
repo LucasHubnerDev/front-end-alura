@@ -6,6 +6,10 @@
   --text-xl: clamp(22px, 3vw, 28px);
   --text-2xl: clamp(28px, 4vw, 36px);
   --text-3xl: clamp(36px, 5vw, 48px);
+
+  --background-primary-color: rgb(110, 111, 199);
+  --background-secondary-color: rgb(117, 119, 208);
+  --backgroung-tertiary-color: rgb(211, 212, 248);
 }
 
 /* reset básico */
@@ -14,6 +18,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: monospace;
+}
+
+body {
+  background-color: var(--backgroung-tertiary-color);
 }
 
 /* titles */

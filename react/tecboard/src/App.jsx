@@ -1,5 +1,5 @@
 import "./App.css";
-import FormularioDeEvento from "./components/FormularioDeEvento";
+import EventForm from "./components/EventForm";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       </header>
       <section className="heroBanner"></section>
       <section>
-        <FormularioDeEvento></FormularioDeEvento>
+        <EventForm></EventForm>
       </section>
     </main>
   );
