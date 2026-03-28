@@ -1,0 +1,44 @@
+.article {
+  width: 260px;
+  height: 420px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--background-tertiary-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.imgCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 6px;
+}
+
+.theme {
+  font-weight: 600;
+  color: #6c5ce7;
+  background-color: var(--background-quaternary-color);
+  text-transform: uppercase;
+  padding: 0.75rem;
+  border-radius: 5px;
+}
+
+.data {
+  color: #636e72;
+}

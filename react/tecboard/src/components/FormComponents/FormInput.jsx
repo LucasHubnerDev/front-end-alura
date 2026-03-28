@@ -1,12 +1,9 @@
 import styles from "./FormInput.module.css";
-export default function FormInput({ type, placeholder, name, id }) {
+export default function FormInput({ ...props }) {
   return (
     <input
-      type={type}
       className={styles.input}
-      name={name}
-      placeholder={placeholder}
-      id={id}
+      {...props}
     />
   );
 }

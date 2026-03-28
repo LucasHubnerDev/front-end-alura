@@ -26,3 +26,15 @@ header {
   background: url("banner.png") no-repeat center;
   background-size: cover;
 }
+
+.themes {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,7 +1,7 @@
 import styles from "./FormButton.module.css";
-export default function FormButton({ text, type }) {
+export default function FormButton({ text, ...props }) {
   return (
-    <button type={type} className={styles.button}>
+    <button {...props} className={styles.button}>
       {text}
     </button>
   );

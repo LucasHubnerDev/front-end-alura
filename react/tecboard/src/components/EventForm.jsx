@@ -6,41 +6,36 @@ import FormSelect from "./FormComponents/FormSelect";
 import FormButton from "./FormComponents/FormButton";
 
 // Main component
-const EventForm = () => {
+const EventForm = ({ temas, afterSubmit }) => {
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const event = Object.fromEntries(formData);
+
+    afterSubmit(event);
+    e.target.reset();
+  }
+
   return (
-    <Form>
+    <Form onSubmit={handleFormSubmit}>
       <FormTitle text="Form to create an event" />
 
-      <FormLabel text="Event" htmlForId="event" />
+      <FormLabel text="Title" htmlFor="title" />
       <FormInput
         type="text"
         placeholder="Alok concert"
-        name="event"
-        id="event"
+        name="title"
+        id="title"
       />
 
-      <FormLabel text="Date" htmlForId="date" />
-      <FormInput type="datetime-local" name="date" id="date" />
+      <FormLabel text="Date" htmlFor="date" />
+      <FormInput type="date" name="date" id="date" />
 
-      <FormLabel text="Theme" htmlForId="theme"></FormLabel>
-      <FormSelect
-        name="theme"
-        id="theme"
-        options={[
-          { id: 1, value: "frontend", label: "FRONT_END" },
-          { id: 2, value: "backend", label: "BACK_END" },
-          { id: 3, value: "datascience", label: "DATA_SCIENCE" },
-          { id: 4, value: "devops", label: "DEV_OPS" },
-        ]}
-      />
+      <FormLabel text="Theme" htmlFor="theme"></FormLabel>
+      <FormSelect name="theme" id="theme" options={temas} />
 
-      <FormLabel text="Description" htmlForId="theme-description" />
-      <FormInput
-        type="text"
-        placeholder="Candy house"
-        name="theme-description"
-        id="theme-description"
-      />
+      <FormLabel text="Image" htmlFor="image" />
+      <FormInput type="text" placeholder="url" name="image" id="image" />
 
       <FormButton type="submit" text="Submit" />
     </Form>

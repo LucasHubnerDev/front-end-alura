@@ -1,7 +1,7 @@
 import styles from "./FormLabel.module.css";
-export default function FormLabel({ text, htmlForId }) {
+export default function FormLabel({text, ...props }) {
   return (
-    <label className={styles.label} htmlFor={htmlForId}>
+    <label className={styles.label} {...props}>
       {text}
     </label>
   );
