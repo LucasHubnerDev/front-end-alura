@@ -1,0 +1,17 @@
+.btn-add-item {
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: #877EED;
+    border: none;
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-add-item:hover {
+    background-color: #5b559e;
+    cursor: pointer;
+}

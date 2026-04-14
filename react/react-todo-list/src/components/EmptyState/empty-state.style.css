@@ -1,0 +1,60 @@
+.container-msg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.msg {
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  max-width: 90%;
+  text-align: center;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* TIPOS */
+
+/* sucesso */
+.container-msg-success .msg {
+  background: #e6f9f0;
+  color: #0f9d58;
+  border: 1px solid #b7ebd1;
+}
+
+/* erro */
+.container-msg-error .msg {
+  background: #ffecec;
+  color: #d93025;
+  border: 1px solid #f5b5b5;
+}
+
+/* aviso */
+.container-msg-warning .msg {
+  background: #fff8e6;
+  color: #f9a825;
+  border: 1px solid #ffe082;
+}
+
+/* info */
+.container-msg-info .msg {
+  background: #eef4ff;
+  color: #3366ff;
+  border: 1px solid #c7d2fe;
+}
+
+/* animação suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
