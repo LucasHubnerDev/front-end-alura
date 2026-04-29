@@ -1,0 +1,6 @@
+.dailyBudget {
+  font-size: clamp(24px, 5vw, 39px);
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--primary-highlight);
+}
